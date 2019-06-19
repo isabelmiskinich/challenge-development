@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>A Web Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Andika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <a class="navbar-brand font"><span>githubstars</span></a>
+        <a class="font" href="home.html">home</a>
+    </nav>
+    
+    <div class="input-group search">       
+        <i class="material-icons icon">search</i>
+        <input name="consulta" id="txt_consulta" placeholder="search by tag" type="text" class="font">
+    </div>
+        
+    <div id="table">
+        <table id="tabela"  class="table table-striped font">
+            <thead>
+                <tr>
+                    <th>Repository</th>
+                    <th>Description</th>        
+                    <th>Language</th>        
+                    <th>Tags</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://github.com/kubernetes/kubernetes">kubernetes</a></td>
+                    <td>Production-Grade Container Scheduling and Management</td>
+                    <td>go</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>   
+                </tr>
+            
+                <tr>
+                    <td><a href="https://github.com/django/django">django</a></td>
+                    <td>The Web framework for perfectionists with deadlines.</td>
+                    <td>python</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/ethicalhack3r/DVWA">DVWA</a></td>
+                    <td>Damn Vulnerable Web Application (DVWA)</td>
+                    <td>php</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/etcd-io/etcd">etcd</a></td>
+                    <td>Distributed reliable key-value store for the most critical data of a distributed system</td>
+                    <td>go</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/facebook/jest">jest</a></td>
+                    <td>Delightful JavaScript Testing.</td>
+                    <td>javascript</td>
+                    <td></td>
+                    <td><a href="">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/runeasymail/easymail">easymail</a></td>
+                    <td>Easy way to install a mail server.</td>
+                    <td>shell</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/paritytech/parity-ethereum">parity</a></td>
+                    <td>The fast, light, and robust EVM and WASM client.</td>
+                    <td>rust</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/SnootyMonkey/posthere.io">posthere.io</a></td>
+                    <td>Debug all the POST requests!</td>
+                    <td>clojure</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/baumgarr/nixnote2">nixnote2</a></td>
+                    <td>Nixnote - A clone of Evernote for Linux</td>
+                    <td>c++</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://github.com/portainer/portainer">portainer</a></td>
+                    <td>Simple management UI for Docker</td>
+                    <td>html</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">moshi</a></td>
+                    <td>A modern JSON library for Kotlin and Java.</td>
+                    <td>java</td>
+                    <td></td>
+                    <td><a href="#">edit</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <script>
+            $('input#txt_consulta').quicksearch('table#tabela tbody tr');
+        </script>
+    </div>
+</body>
+</html>
